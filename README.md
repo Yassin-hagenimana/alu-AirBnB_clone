@@ -4,67 +4,48 @@ HBnB is a comprehensive web application that combines database storage, a back-e
 
 
 ## Description of the command interpreter:
-The interface of the application is just like the Bash shell except that this has a limited number of accepted commands that were solely defined for the purposes of the usage of the AirBnB website.
+The application's interface resembles the Bash shell but is limited to specific commands designed for the AirBnB website. This command-line interpreter acts as the front end of the web application, allowing users to interact with the backend, which is built using Python's object-oriented programming (OOP).
 
-This command line interpreter  serves as the frontend of the web app where users can interact with the backend which was developed with python OOP programming.
 
-Some of the commands available are:
+List of some commands:
 - show
 - create
 - update
 - destroy
 - count
 
-And as part of the implementation of the command line interpreter coupled with the backend and file storage system, the folowing actions can be performed:
--   Creating new objects (ex: a new User or a new Place)
--   Retrieving an object from a file, a database etc…
--   Doing operations on objects (count, compute stats, etc…)
--   Updating attributes of an object
--   Destroying an object
+As part of implementing the command-line interpreter alongside the backend and file storage system, several actions can be carried out. These include creating new objects, such as a User or Place, retrieving objects from files or databases, performing operations on objects like counting or computing statistics, updating the attributes of an object, and deleting an object.
 
 ## How to start it
-These instructions will get you a copy of the project up and running on your local machine (Linux distro) for development and testing purposes.
+These steps will help you set up and run the project on your local Linux machine for development and testing.
 
 ## Installing
 
-You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
+You will need to clone the project's repository from GitHub, which includes the simple shell program and all its dependencies.
 
 ```
 git clone https://github.com/Yassin-hagenimana/alu-AirBnB_clone.git
 ```
-After cloning the repository you will have a folder called AirBnB_clone. In here there will be several files that allow the program to work.
+Once cloned, you'll have a folder named AirBnB_clone containing various files necessary for the program to function. Key files include:
 
-> /console.py : The main executable of the project, the command interpreter.
->
-> models/engine/file_storage.py: Class that serializes instances to a JSON file and deserializes JSON file to instances
-> 
-> models/__ init __.py:  A unique `FileStorage` instance for the application
-> 
-> models/base_model.py: Class that defines all common attributes/methods for other classes.
-> 
-> models/user.py: User class that inherits from BaseModel
-> 
->models/state.py: State class that inherits from BaseModel
->
->models/city.py: City class that inherits from BaseModel
->
->models/amenity.py: Amenity class that inherits from BaseModel
->
->models/place.py: Place class that inherits from BaseModel
->
->models/review.py: Review class that inherits from BaseModel
+/console.py: The main executable and command interpreter of the project.
+models/engine/file_storage.py: A class responsible for serializing instances to a JSON file and deserializing JSON files back to instances.
+models/__ init __.py: Initializes a unique FileStorage instance for the application.
+models/base_model.py: A class defining common attributes and methods for other classes.
+models/user.py: A User class inheriting from BaseModel.
+models/state.py: A State class inheriting from BaseModel.
+models/city.py: A City class inheriting from BaseModel.
+models/amenity.py: An Amenity class inheriting from BaseModel.
+models/place.py: A Place class inheriting from BaseModel.
+models/review.py: A Review class inheriting from BaseModel.
+Usage
+The program can operate in two modes: Interactive and Non-interactive.
 
+## In Interactive mode,
+ The console will display a prompt (hbnb), allowing the user to input and execute commands. After executing a command, the prompt reappears, waiting for the next command, continuing indefinitely until the user exits the program.
 
-
-## How to use it
-It can work in two different modes:
-
-
-**Interactive** and **Non-interactive**.
-
-In **Interactive mode**, the console will display a prompt (hbnb) indicating that the user can write and execute a command. After the command is run, the prompt will appear again a wait for a new command. This can go indefinitely as long as the user does not exit the program.
-
-```
+bash
+Copy code
 $ ./console.py
 (hbnb) help
 
@@ -76,12 +57,11 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
-```
+## In Non-interactive mode,
+ The shell runs a command piped into it during execution. The command runs immediately upon startup, and no prompt appears for further input.
 
-In **Non-interactive mode**, the shell will need to be run with a command input piped into its execution so that the command is run as soon as the Shell starts. In this mode no prompt will appear, and no further input will be expected from the user.
-
-
-```
+bash
+Copy code
 $ echo "help" | ./console.py
 (hbnb)
 
@@ -101,17 +81,11 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb) 
 $
-```
-
-## Format of Command Input
-
-In order to give commands to the console, these will need to be piped through an echo in case of  **Non-interactive mode**.
-
-In  **Interactive Mode**  the commands will need to be written with a keyboard when the prompt appears and will be recognized when an enter key is pressed (new line). As soon as this happens, the console will attempt to execute the command through several means or will show an error message if the command didn't run successfully. In this mode, the console can be exited using the **CTRL + D** combination,  **CTRL + C**, or the command **quit** or **EOF**.
+ ## Command Input Format
+In Non-interactive mode, commands are piped through an echo. In Interactive mode, commands are typed via the keyboard when the prompt appears and are executed when the Enter key is pressed. If the command fails, an error message will be displayed. The console can be exited using CTRL + D, CTRL + C, or the commands quit or EOF.
 
 ## Arguments
-
-Most commands have several options or arguments that can be used when executing the program. In order for the Shell to recognize those parameters, the user must separate everything with spaces.
+Most commands accept multiple options or arguments. To ensure the shell recognizes these parameters, users should separate them with spaces.
 
 Example:
 
