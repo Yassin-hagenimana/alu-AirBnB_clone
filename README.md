@@ -10,5 +10,5 @@ HBnB is a comprehensive web application that combines database storage, a back-e
 ## Usage :
 
 
-## Authors :black_nib:
+## Authors :
 * **Yassin Hagenimana** <[Yassin-hagenimana](https://github.com/Yassin-hagenimana)> <y.hageniman@alustudent.com>
