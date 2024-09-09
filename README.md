@@ -5,12 +5,10 @@
 
 ## Description :house:
 
-HBnB is a complete web application, integrating database storage, a back-end API, and front-end interfacing in a clone of AirBnB. This is the first step towards building a full web application: an AirBnB clone. This first step consists of a custom command-line interface for data management, and the base classes for the storage of this data.
+HBnB is a comprehensive web application that combines database storage, a back-end API, and front-end interface to replicate the functionality of AirBnB. As the initial phase in developing a full web application, this step involves creating a custom command-line interface for managing data and establishing the foundational classes for data storage.
 
+## Usage :
 
-## Usage :computer:
-
-TO BE ADDED SOON...
 
 ## Authors :black_nib:
-* **Yassin Hagenimana**
+* **Yassin Hagenimana** <[Yassin-hagenimana](https://github.com/Yassin-hagenimana)> <y.hageniman@alustudent.com>

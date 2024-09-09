@@ -2,18 +2,19 @@ import uuid
 from datetime import datetime
 import models
 
+
 class BaseModel:
     """Defines all common attributes/methods for other classes."""
 
     def __init__(self, *args, **kwargs):
         """Initializes the BaseModel with unique ID and creation time."""
-        
+
         tform = "%Y-%m-%dT%H:%M:%S.%f"
-        
+
         self.id = str(uuid.uuid4())  # unique id converted to string
         self.created_at = datetime.now()  # current datetime for creation
-        self.updated_at = datetime.now()  # setting updated_at to the same time as created_at
-        
+        self.updated_at = datetime.now()  # updated_at same as as created_at
+
         if kwargs:
             for key, value in kwargs.items():
                 if key == 'created_at' or key == 'updated_at':

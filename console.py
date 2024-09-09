@@ -3,6 +3,12 @@
 import cmd
 from models import storage
 from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.place import Place
+from models.amenity import Amenity
+from models.review import Review
 
 
 class HBNBCommand(cmd.Cmd):
@@ -10,7 +16,13 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = "(hbnb) "
     __all_classes = {
-        "BaseModel"
+        "BaseModel",
+        "User",
+        "State",
+        "City",
+        "Amenity",
+        "Place",
+        "Review"
     }
 
     def emptyline(self):
@@ -33,7 +45,7 @@ class HBNBCommand(cmd.Cmd):
     def help_EOF(self):
         """Print help message for EOF command."""
         print("EOF signal to exit the program")
-    
+
     def do_create(self, args):
         """
             Creates a new instance of a class,
@@ -62,7 +74,7 @@ class HBNBCommand(cmd.Cmd):
         new_object.save()
         print(new_object.id)
         storage.save()
-        
+
     def do_show(self, args):
         """Usage: to show <class> <id> or <class>.show(<id>)
         Display string representation of a class instance of given id.
@@ -86,7 +98,7 @@ class HBNBCommand(cmd.Cmd):
             return
         else:
             print(objdict[object_key])
-            
+
     def do_destroy(self, args):
         """Usage: to destroy <class> <id> or <class>.destroy(<id>)
         Delete class instance of given id."""
@@ -112,7 +124,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             del all_objects[object_key]
             storage.save()
-            
+
     def do_all(self, args):
         """Usage: all or all <class> or <class>.all()
         Display string representations of all instances of given class
@@ -137,7 +149,7 @@ class HBNBCommand(cmd.Cmd):
             if class_name == all_objects[obj].__class__.__name__:
                 object_list.append(str(all_objects[obj]))
         print(object_list)
-        
+
     def do_update(self, args):
         """Usage: to update <class> <id> <attribute_name> <attribute_value> or
        <class>.update(<id>, <attribute_name>, <attribute_value>) or
