@@ -1,0 +1,56 @@
+{
+  "Amenity.6c055ec7-de9d-4ae4-989f-ada9fa03e8b4": {
+    "id": "6c055ec7-de9d-4ae4-989f-ada9fa03e8b4",
+    "created_at": "2024-09-09T19:18:55.578707",
+    "updated_at": "2024-09-09T19:18:55.578842",
+    "__class__": "Amenity"
+  },
+  "Amenity.bedc3c60-beda-4a7f-92ac-0185f6513c3c": {
+    "id": "bedc3c60-beda-4a7f-92ac-0185f6513c3c",
+    "created_at": "2024-09-09T19:18:55.578903",
+    "updated_at": "2024-09-09T19:18:55.578906",
+    "__class__": "Amenity"
+  },
+  "Amenity.90b388d9-c90e-40d7-ba53-35b4c4be48e1": {
+    "id": "90b388d9-c90e-40d7-ba53-35b4c4be48e1",
+    "created_at": "2024-09-09T19:18:55.578940",
+    "updated_at": "2024-09-09T19:18:55.578941",
+    "__class__": "Amenity"
+  },
+  "Amenity.6fc616bb-8bca-444c-9272-a80c1ba63256": {
+    "id": "6fc616bb-8bca-444c-9272-a80c1ba63256",
+    "created_at": "2024-09-09T19:18:55.578968",
+    "updated_at": "2024-09-09T19:18:55.578969",
+    "__class__": "Amenity"
+  },
+  "BaseModel.085e4750-2288-49a7-a272-24a9c2d73bb3": {
+    "id": "085e4750-2288-49a7-a272-24a9c2d73bb3",
+    "created_at": "2024-09-09T19:18:55.579014",
+    "updated_at": "2024-09-09T19:18:55.579015",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.0368b703-9fb2-439b-950c-a19063107a0d": {
+    "id": "0368b703-9fb2-439b-950c-a19063107a0d",
+    "created_at": "2024-09-09T19:18:55.579044",
+    "updated_at": "2024-09-09T19:18:55.579045",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.4409133a-1afe-4a28-a2fc-13f3a73a211c": {
+    "id": "4409133a-1afe-4a28-a2fc-13f3a73a211c",
+    "created_at": "2024-09-09T19:18:55.579067",
+    "updated_at": "2024-09-09T19:18:56.580239",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.1d86b392-8c74-4d67-b645-52a7a80cc593": {
+    "id": "1d86b392-8c74-4d67-b645-52a7a80cc593",
+    "created_at": "2024-09-09T19:18:56.589574",
+    "updated_at": "2024-09-09T19:18:56.589602",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.dcaf39c1-97ad-4d98-a9d5-d2501b7f50ed": {
+    "id": "dcaf39c1-97ad-4d98-a9d5-d2501b7f50ed",
+    "created_at": "2024-09-09T19:30:42.379229",
+    "updated_at": "2024-09-09T19:30:42.379273",
+    "__class__": "BaseModel"
+  }
+}
